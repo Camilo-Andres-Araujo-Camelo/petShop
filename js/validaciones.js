@@ -11,7 +11,7 @@ inputNacimiento.addEventListener('blur', (event) => {
 
 export const valida = (input) => {
   const tipoDeInput = input.dataset.tipo;
-  console.log(tipoDeInput);
+  // console.log(tipoDeInput);
   if (validadores[tipoDeInput]) {
     validadores[tipoDeInput](input);
   }
@@ -78,9 +78,9 @@ const mostrarMensajeDeError = (tipoDeInput, input) => {
   let mensaje = '';
   tipoDeErrores.forEach((error) => {
     if (input.validity[error]) {
-      console.log(error);
-      console.log(input.validity[error]);
-      console.log(mensajesDeError[tipoDeInput][error]);
+      // console.log(error);
+      // console.log(input.validity[error]);
+      // console.log(mensajesDeError[tipoDeInput][error]);
       mensaje = mensajesDeError[tipoDeInput][error];
     }
   });
